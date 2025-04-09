@@ -48,7 +48,7 @@ export default function Home() {
 						</a>
 					</div>
 				</div>
-				<div className="prose dark:prose-invert max-w-none prose-lg pt-8 pb-7 xl:col-span-2">
+				<div className="prose font-thin dark:prose-invert max-w-none prose-lg pt-8 pb-7 xl:col-span-2">
 					<p>
 						Hey everyone my name is Dmitry, i am a Frontend developer based in
 						Saransk/Russia
