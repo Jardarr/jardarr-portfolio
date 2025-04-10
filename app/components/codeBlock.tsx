@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function CodeBlock() {
     return (
-        <div className="whitespace-pre rounded-md shadow-2xl bg-neutral-800 text-xs text-white overflow-x-auto max-w-full p-4">
+        <div className="whitespace-pre rounded-md shad shadow-2xl bg-neutral-100 dark:bg-neutral-800 text-xs dark:text-white text-neutral-900 overflow-x-auto max-w-full p-4">
             <code>
                 <span className="text-amber-300">{'{'}</span><br />
                     &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-yellow-600">&quot;name&quot;:</span> <span className="text-emerald-400">&quot;Dmitry&quot;</span>,<br />
