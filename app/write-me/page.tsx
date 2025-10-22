@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 
 export default function WriteMe() {
     const [formData, setFormData] = useState({ message: "" });
@@ -46,13 +47,14 @@ export default function WriteMe() {
 
     return (
         <div className="divide-y divide-gray-200 dark:divide-gray-700">
-            <div className="space-y-2 pt-6 pb-8 md:space-y-5">
+            <div className="flex flex-col justify-between items-center sm:flex-row space-y-2 pt-6 pb-8 md:space-y-5">
                 <h1 className="text-3xl font-bold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
                     Write me
                 </h1>
+                <Image src="/j-assist.png" alt="assistant" width={200} height={200} className="w-28 h-28 rounded-2xl border border-teal-700" />
             </div>
-            <div className="w-full flex items-center flex-col">
-                <h2 className="text-xl mt-2">You can write me a message in the telegram bot.</h2>
+            <div className="w-full flex items-center flex-col text-xs sm:text-xl text-center">
+                <h2 className="mt-2">You can write me a message in the telegram bot.</h2>
                 <p>Be sure to include an address or phone number for feedback</p>
                 <div className="max-w-[500px] mx-auto mt-8 w-full">
                     <form onSubmit={handleSubmit}>
