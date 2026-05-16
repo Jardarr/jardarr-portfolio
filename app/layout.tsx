@@ -8,7 +8,7 @@ import localFont from "next/font/local";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-	title: "My Portfolio",
+	title: "jrdrr",
 	description: "Built using nextjs and tailwind",
 };
 
