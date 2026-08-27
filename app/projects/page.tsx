@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { getFilteredPosts } from "@/lib/sanityUtils";
 import Image from "next/image";
+import Link from "next/link";
 
 export const revalidate = 60;
 
@@ -23,10 +24,10 @@ export default async function Projects() {
                             <CardContent className="">
                                 <h3 className="text-sm text-teal-500 line-clamp-1">{post.title}</h3>
                                 <p className="text-xs line-clamp-3">&quot;{post.description}&quot;</p>
-                                <a href={post.link} target="_blank" className="group my-4 inline-flex items-center gap-1 text-sm font-medium text-teal-500">
+                                <Link href={`/projects/${post.slug.current}`} className="group my-4 inline-flex items-center gap-1 text-sm font-medium text-teal-500">
                                     Learn More
                                     <span className="block transition-all group-hover:ms-0.5">&rarr;</span>
-                                </a>
+                                </Link>
                             </CardContent>
                         </Card>
                     ))}
