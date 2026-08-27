@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import Me from "../../public/me-pixel.png";
+import Me from "../../public/me-ph.jpg";
 export default function HomePageAvatar() {
     const [isLoaded, setIsLoaded] = useState(false);
     return (
@@ -13,7 +13,7 @@ export default function HomePageAvatar() {
             <Image
                 src={Me}
                 alt="Dmitry Pligin"
-                className={`h-48 w-48 rounded-full object-cover object-top ${isLoaded ? "opacity-100" : "opacity-0"}`}
+                className={`h-48 w-48 rounded-full object-cover object-bottom ${isLoaded ? "opacity-100" : "opacity-0"}`}
                 onLoadingComplete={() => setIsLoaded(true)}
             />
         </div>
