@@ -52,7 +52,7 @@ export default function Navbar() {
                             </Link>
                             <ThemeButton />
                         </div>
-                        <div className="-mr-2 flex items-center sm:hidden">
+                        <div className="flex items-center sm:hidden">
                             <ThemeButton />
                         </div>
                     </div>
