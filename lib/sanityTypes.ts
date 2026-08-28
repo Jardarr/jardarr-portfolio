@@ -6,6 +6,7 @@ interface Post {
 	title: string;
 	link: string;
 	text: string;
+    technologies?: string[];
 	slug: { current: string };
 	mainImage?: { asset: { url: string } };
 	gallery?: { asset: { url: string; }; }[];

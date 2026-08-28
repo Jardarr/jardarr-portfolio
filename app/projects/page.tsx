@@ -20,7 +20,7 @@ export default async function Projects() {
                 <div className="grid grid-cols-1 sm:grid-cols-3 m-5 gap-5">
                     {posts.map((post) => (
                         <Card key={post.slug.current} className="">
-                            <Image src={post.mainImage?.asset.url || ""} alt="image" width={400} height={300} className="h-40 object-cover object-top rounded-t-xl" />
+                            <Image src={post.mainImage?.asset.url || ""} alt="image" width={400} height={300} className="h-40 object-cover object-center rounded-t-xl" />
                             <CardContent className="">
                                 <h3 className="text-sm text-teal-500 line-clamp-1">{post.title}</h3>
                                 <p className="text-xs line-clamp-3">&quot;{post.description}&quot;</p>

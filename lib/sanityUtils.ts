@@ -19,6 +19,7 @@ export async function getPostBySlug(slug: string): Promise<Post | null> {
         slug,
         description,
         text,
+        technologies,
         link,
         mainImage{
             asset->{
